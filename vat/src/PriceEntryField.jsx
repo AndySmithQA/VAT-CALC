@@ -5,7 +5,7 @@ const PriceEntryField = (props) => {
     return (
         <div className={props.customstyle}>
             {props.label}
-        <NumberEditorField value={props.price} />
+        <NumberEditorField value={props.price} valueChanged={props.priceChanged}/>
         </div>
     )
 }
